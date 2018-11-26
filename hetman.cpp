@@ -35,7 +35,12 @@ void przekatna(int x, int y)
         p--;
     }
 
-
+    for (int i=0, j=7; j > -1; i++, j--)
+    if(plansza[j][i] == 0)
+    {
+        plansza[j][i] = 1;
+        p--;
+    }
 }
 
 void rysuj()
@@ -74,6 +79,6 @@ int main()
 
     if(h == 8)
     cout << "Win";
-    else
+    else if(p == 0)
     cout << "Lose";
 }
