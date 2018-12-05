@@ -11,5 +11,5 @@ int main() {
 			return 0;
 		}
 	}
-	cout << "TAK\n"
+	cout << "TAK\n";
 }
